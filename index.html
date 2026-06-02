@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>電気値下げ隊 ｜ 3分で電気料金診断</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=M+PLUS+1p:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- Google Tag Manager -->
+<!-- ★GTM: ここに <head> 用スニペットを貼り付け（後日設置） -->
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<!-- ★GTM: ここに <body> 直後用 noscript スニペットを貼り付け（後日設置） -->
+<!-- End Google Tag Manager (noscript) -->
+<div class="page">
+
+  <!-- ================== Header ================== -->
+  <header class="site-header" data-screen-label="01 Header">
+    <img class="logo" src="images/logo.png" alt="電気値下げ隊">
+    <button class="menu-btn" id="menuBtn" aria-label="メニューを開く" aria-expanded="false">
+      <img src="images/hamburger.png" alt="">
+    </button>
+  </header>
+
+  <!-- ================== Drawer Menu ================== -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <nav class="drawer" id="drawer" aria-hidden="true">
+    <button class="drawer-close" id="drawerClose" aria-label="閉じる">×</button>
+    <img class="drawer-logo" src="images/logo.png" alt="電気値下げ隊">
+    <ul class="drawer-links">
+      <li><a href="#danger" data-nav>こんな人は危険</a></li>
+      <li><a href="#solution" data-nav>電気値下げ隊とは</a></li>
+      <li><a href="#cases" data-nav>おトク事例</a></li>
+      <li><a href="#flow" data-nav>ご利用の流れ</a></li>
+      <li><a href="#faq" data-nav>よくあるご質問</a></li>
+      <li><a href="#form" data-nav>無料で料金診断</a></li>
+    </ul>
+    <ul class="drawer-sub">
+      <li><a href="company.html">運営会社</a></li>
+      <li><a href="https://terms.012grp.co.jp/privacy/shinseikatsu_p/" target="_blank" rel="noopener">プライバシーポリシー</a></li>
+    </ul>
+    <a href="#form" class="drawer-cta" data-nav>3分で料金診断する</a>
+  </nav>
+
+  <!-- ================== ① FV ================== -->
+  <section class="fv" data-screen-label="02 FV">
+    <div class="fv-stage" id="fvStage">
+      <div class="fv-bg"></div>
+      <img class="fv-layer fv-sono"     src="images/copy-sono.png"     alt="その新電力、">
+      <img class="fv-layer fv-takai"    src="images/copy-takai.png"    alt="実は高い。">
+      <img class="fv-layer fv-person"   src="images/person.png"        alt="">
+      <img class="fv-layer fv-shiranai" src="images/copy-shiranai.png" alt="知らないだけで、毎月損してるかも。">
+      <img class="fv-layer fv-bill"     src="images/bill.png"          alt="">
+      <img class="fv-layer fv-chart"    src="images/chart.png"         alt="">
+      <img class="fv-layer fv-banner"   src="images/banner.png"        alt="今、電気代は上昇中！">
+    </div>
+
+    <div class="fv-cta-wrap">
+      <a href="#form" class="cta-yellow">
+        <span class="free"><span>完全</span><span>無料</span></span>
+        <span class="body"><span class="min">3分</span>で料金診断する</span>
+        <span class="arrow">›</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================== ② 危険チェック ================== -->
+  <section class="danger" id="danger" data-screen-label="03 危険チェック">
+    <div class="danger-warn reveal">
+      <img class="title-img" src="images/title-band.png" alt="こんな人、危険です。">
+    </div>
+
+    <div class="danger-cards reveal">
+      <div class="danger-card">
+        <span class="cb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#e60012" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 12 10 18 20 6"/>
+          </svg>
+        </span>
+        <span class="txt">安いと言われて<br>新電力にした</span>
+      </div>
+      <div class="danger-card">
+        <span class="cb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#e60012" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 12 10 18 20 6"/>
+          </svg>
+        </span>
+        <span class="txt">比較が面倒で<br>放置してる</span>
+      </div>
+      <div class="danger-card">
+        <span class="cb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#e60012" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 12 10 18 20 6"/>
+          </svg>
+        </span>
+        <span class="txt">市場連動型が<br>よくわからない</span>
+      </div>
+      <div class="danger-card">
+        <span class="cb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#e60012" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 12 10 18 20 6"/>
+          </svg>
+        </span>
+        <span class="txt">どれを選べば<br>いいかわからない</span>
+      </div>
+    </div>
+
+    <div class="danger-loss reveal">
+      <img class="loss-img" src="images/loss-copy3.png" alt="知らないだけで、毎月損してるかも。">
+    </div>
+
+    <div class="danger-cause reveal">
+      <p class="cause-text">
+        <span class="hl">市場連動型プラン</span>は、世界情勢や燃料価格で料金が<span class="hl-red">急騰</span>する場合があります。<span class="gap"></span>
+        イラン情勢やエネルギー問題で、安いと思ってた電気が<span class="hl-red">逆に高くなる</span>ケースも。
+      </p>
+      <div class="crisis">
+        <img src="images/crisis2.png" alt="世界情勢・燃料価格の高騰イメージ">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== ③ 解決策 ================== -->
+  <section class="solution" id="solution" data-screen-label="04 本当に安い会社がわかる">
+    <h2 class="solution-head reveal">
+      <span class="logo-line"><img class="head-logo" src="images/logo.png" alt="電気値下げ隊">なら、</span>
+      <span class="big"><span class="red">本当に安い</span>会社がわかる。</span>
+    </h2>
+    <p class="lead reveal">診断・比較・提案、まるごとお任せ。</p>
+
+    <div class="solution-hero reveal">
+      <img class="hero-img" src="images/solution-hero.png?v=4" alt="タブレットで料金プランを説明する相談員と、明細を見て驚くお客様">
+    </div>
+
+    <div class="solution-points reveal">
+      <div class="solution-point">
+        <span class="num">01</span>
+        <div class="ico-wrap"><img class="ico" src="images/monitor-search.png" alt=""></div>
+        <div class="body">
+          <div class="ttl">比較はおまかせ</div>
+          <div class="desc">複数の電力会社をまとめて比較。</div>
+        </div>
+      </div>
+      <div class="solution-point">
+        <span class="num">02</span>
+        <div class="ico-wrap"><img class="ico" src="images/yen-zero.png" alt=""></div>
+        <div class="body">
+          <div class="ttl">相談・診断 0円</div>
+          <div class="desc">料金チェックから提案まで費用不要。</div>
+        </div>
+      </div>
+      <div class="solution-point">
+        <span class="num">03</span>
+        <div class="ico-wrap"><img class="ico" src="images/lightbulb-yellow.png" alt=""></div>
+        <div class="body">
+          <div class="ttl">切り替えもラク</div>
+          <div class="desc">面倒な手続きもまとめておまかせ。</div>
+        </div>
+      </div>
+      <div class="solution-point">
+        <span class="num">04</span>
+        <div class="ico-wrap"><img class="ico" src="images/handshake.png" alt=""></div>
+        <div class="body">
+          <div class="ttl">プロが最適提案</div>
+          <div class="desc">地域や使い方に合う会社をご案内。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== ④ 中間CTA ================== -->
+  <section class="mid-cta" data-screen-label="05 中間CTA">
+    <p class="lead reveal">今の契約、<br><span class="ask">そのままで大丈夫？</span></p>
+    <p class="sub reveal">まずは無料で、下がるかだけ確認。</p>
+    <a href="#form" class="cta-yellow reveal">
+      <span class="free"><span>完全</span><span>無料</span></span>
+      <span class="body"><span class="min">3分</span>で料金診断する</span>
+      <span class="arrow">›</span>
+    </a>
+    <div class="note">ご利用は完全無料。相談だけでもOKです。</div>
+  </section>
+
+  <!-- ================== ⑤ 事例 ================== -->
+  <section class="cases" id="cases" data-screen-label="06 事例">
+    <div class="cases-head reveal">
+      <img class="burst" src="images/burst-left2.png" alt="">
+      <span class="htxt">実際に、これだけ<span class="yellow">おトクに！</span></span>
+      <img class="burst r" src="images/burst-left2.png" alt="">
+    </div>
+    <p class="lead reveal">電気料金を見直した場合の削減イメージです。</p>
+
+    <div class="case-grid3 reveal">
+      <!-- 一人暮らし -->
+      <article class="ocard">
+        <div class="lbl-bar"><img class="pic" src="images/person12.png" alt="">一人暮らしの場合</div>
+        <div class="ba">
+          <img class="photo" src="images/photo-solo.png" alt="一人暮らしの男性">
+          <div class="nums">
+            <div class="b-lbl">Before</div>
+            <div class="b-amt">7,980円</div>
+            <div class="arr">▼</div>
+            <div class="a-lbl">After</div>
+            <div class="a-amt">5,480<small>円</small></div>
+          </div>
+        </div>
+        <div class="save"><span class="coin">¥</span><span class="badge-text">年間<span class="amt">30,000</span>円おトク！</span></div>
+      </article>
+
+      <!-- 二人暮らし -->
+      <article class="ocard">
+        <div class="lbl-bar"><img class="pic" src="images/person22.png" alt="">二人暮らしの場合</div>
+        <div class="ba">
+          <img class="photo" src="images/photo-couple.png" alt="二人暮らしのカップル">
+          <div class="nums">
+            <div class="b-lbl">Before</div>
+            <div class="b-amt">15,230円</div>
+            <div class="arr">▼</div>
+            <div class="a-lbl">After</div>
+            <div class="a-amt">9,480<small>円</small></div>
+          </div>
+        </div>
+        <div class="save"><span class="coin">¥</span><span class="badge-text">年間<span class="amt">69,000</span>円おトク！</span></div>
+      </article>
+
+      <!-- ファミリー -->
+      <article class="ocard">
+        <div class="lbl-bar"><img class="pic" src="images/family2.png" alt="">ファミリー世帯の場合</div>
+        <div class="ba">
+          <img class="photo" src="images/photo-family.png" alt="ファミリー世帯">
+          <div class="nums">
+            <div class="b-lbl">Before</div>
+            <div class="b-amt">24,850円</div>
+            <div class="arr">▼</div>
+            <div class="a-lbl">After</div>
+            <div class="a-amt">16,240<small>円</small></div>
+          </div>
+        </div>
+        <div class="save"><span class="coin">¥</span><span class="badge-text">年間<span class="amt">103,000</span>円おトク！</span></div>
+      </article>
+    </div>
+
+    <div class="cases-dots" id="casesDots"><i class="on"></i><i></i><i></i></div>
+
+    <p class="cases-note"><span>※削減額は一例です。ご契約内容・使用量・地域により異なります。</span></p>
+  </section>
+
+  <!-- ================== ⑥ ご利用の流れ ================== -->
+  <section class="flow" id="flow" data-screen-label="07 ご利用の流れ">
+    <div class="title-deco reveal"><span class="star"></span></div>
+    <h2 class="section-title reveal">ご利用の流れ</h2>
+    <div class="sub reveal"><span class="yellow-hl">3STEP</span>で値下げ実現！</div>
+    <div class="flow-grid reveal">
+      <div class="flow-card">
+        <span class="step">STEP1</span>
+        <img class="ico" src="images/clipboard-pencil.png" alt="">
+        <div class="ttl">フォーム入力<br>（3分料金診断）</div>
+        <div class="desc">簡単な情報を入力して<br>料金を診断！</div>
+      </div>
+      <div class="flow-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 4 18 12 8 20"/></svg>
+      </div>
+      <div class="flow-card">
+        <span class="step">STEP2</span>
+        <img class="ico" src="images/monitor-search.png" alt="">
+        <div class="ttl">電気会社の<br>料金を比較</div>
+        <div class="desc">最適なプランを比較し<br>おトク額を確認！</div>
+      </div>
+      <div class="flow-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 4 18 12 8 20"/></svg>
+      </div>
+      <div class="flow-card">
+        <span class="step">STEP3</span>
+        <img class="ico" src="images/lightbulb-bolt.png" alt="">
+        <div class="ttl">電気会社を<br>切り替え</div>
+        <div class="desc">条件に納得できたら<br>切り替えて完了！</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== ⑦ FAQ ================== -->
+  <section class="faq" id="faq" data-screen-label="08 FAQ">
+    <div class="title-deco reveal"><span class="star"></span></div>
+    <h2 class="section-title reveal">よくあるご質問</h2>
+    <div class="faq-list reveal">
+      <article class="faq-item">
+        <button class="faq-q">
+          <span class="qmark">Q</span>
+          <span class="qtxt">本当に無料でサービスを利用できますか？</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-a">料金の診断から提案にいたるまですべて完全無料で行っております。ご相談や電力の切り替えにあたって当社に費用をお支払いいただく必要は一切ございません。</div>
+      </article>
+      <article class="faq-item">
+        <button class="faq-q">
+          <span class="qmark">Q</span>
+          <span class="qtxt">切り替え先の電力会社が倒産したら電気が使えなくなるのでしょうか？</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-a">切り替え先の電力会社が倒産した場合は、一定期間他の電力会社様より電力の供給が行われますので、すぐに使えなくなることはございません。期間が過ぎると電力の供給も止まりますので、それまでに新しい電力会社をお選びいただく必要があります。</div>
+      </article>
+      <article class="faq-item">
+        <button class="faq-q">
+          <span class="qmark">Q</span>
+          <span class="qtxt">切り替えには工事が必要でしょうか？</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-a">基本的に電力会社切り替えに伴う工事は必要ありません。ただ、スマートメーターと呼ばれるデジタル式の電気量メーターをご利用中でない場合は、簡単な工事が必要となります。</div>
+      </article>
+      <article class="faq-item">
+        <button class="faq-q">
+          <span class="qmark">Q</span>
+          <span class="qtxt">見積もりに必要な書類はありますか？</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-a">電気料金の明細書を1年分（12か月分）ご用意ください。明細書は紙のものでもデータでも構いません。</div>
+      </article>
+      <article class="faq-item">
+        <button class="faq-q">
+          <span class="qmark">Q</span>
+          <span class="qtxt">今使っている電気が高圧か低圧かわかりません。どう確認すればいいですか？</span>
+          <span class="chev">▾</span>
+        </button>
+        <div class="faq-a">電気料金の請求書内、『契約種別』もしくは『供給電圧』をご確認ください。『契約種別』欄に「高圧」と記載されているか『供給電圧』が6kV（キロボルト）以上であれば高圧電力をご利用中です。</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================== ⑧ 最終CTA ================== -->
+  <section class="final-cta" data-screen-label="09 最終CTA">
+    <h2 class="reveal">知らないまま放置する前に、<br><span class="yellow">まずは無料で確認。</span></h2>
+    <a href="#form" class="cta-yellow reveal">
+      <span class="free"><span>完全</span><span>無料</span></span>
+      <span class="body"><span class="min">3分</span>で料金診断する</span>
+      <span class="arrow">›</span>
+    </a>
+    <div class="final-trust reveal">
+      <div class="cell">
+        <div class="badge"><img src="images/yen-zero.png" alt=""></div>
+        <span class="lbl">完全無料</span>
+      </div>
+      <div class="cell">
+        <div class="badge"><img src="images/clipboard-check.png" alt=""></div>
+        <span class="lbl">相談だけOK</span>
+      </div>
+      <div class="cell">
+        <div class="badge"><img src="images/japan-coverage.png" alt=""></div>
+        <span class="lbl">全国対応</span>
+      </div>
+      <div class="cell">
+        <div class="badge"><img src="images/handshake.png" alt=""></div>
+        <span class="lbl">手続き<br>丸投げOK</span>
+      </div>
+    </div>
+    <div class="foot">ご利用は完全無料です。お気軽にご相談ください。</div>
+  </section>
+
+  <!-- ================== Form ================== -->
+  <section class="form-section" id="form" data-screen-label="10 フォーム">
+    <div class="form-head reveal">
+      <p class="form-mini">3分で完了！</p>
+      <h2 class="form-title">スピード見積もりフォーム</h2>
+      <p class="form-sub">送信後、担当者よりお電話でご案内します。</p>
+    </div>
+
+    <form class="lead-form reveal" id="leadForm" novalidate>
+      <div class="field">
+        <label for="f-name">お名前<span class="req">必須</span></label>
+        <input type="text" id="f-name" name="name" autocomplete="name" placeholder="例）山田太郎" required>
+      </div>
+      <div class="field">
+        <label for="f-tel">お電話番号<span class="req">必須</span></label>
+        <input type="tel" id="f-tel" name="tel" autocomplete="tel" inputmode="numeric" placeholder="例）09012345678" required>
+        <p class="field-err" id="err-tel"></p>
+      </div>
+      <div class="field">
+        <label for="f-email">メールアドレス<span class="req">必須</span></label>
+        <input type="email" id="f-email" name="email" autocomplete="email" inputmode="email" placeholder="例）example@mail.com" required>
+      </div>
+      <div class="field">
+        <label for="f-company">ご利用中の電力会社<span class="opt">任意</span></label>
+        <input type="text" id="f-company" name="company" placeholder="例）東京電力">
+      </div>
+
+      <!-- 計測用 hidden input（URLパラメータ自動取得） -->
+      <input type="hidden" id="trk-utm_source" name="utm_source" value="">
+      <input type="hidden" id="trk-utm_medium" name="utm_medium" value="">
+      <input type="hidden" id="trk-utm_campaign" name="utm_campaign" value="">
+      <input type="hidden" id="trk-utm_term" name="utm_term" value="">
+      <input type="hidden" id="trk-utm_content" name="utm_content" value="">
+      <input type="hidden" id="trk-placement" name="placement" value="">
+      <input type="hidden" id="trk-keyword" name="keyword" value="">
+      <input type="hidden" id="trk-matchtype" name="matchtype" value="">
+      <input type="hidden" id="trk-gclid" name="gclid" value="">
+      <input type="hidden" id="trk-fbclid" name="fbclid" value="">
+      <input type="hidden" id="trk-lpv" name="lpv" value="">
+      <input type="hidden" id="trk-lp_path" name="lp_path" value="">
+      <input type="hidden" id="trk-referrer" name="referrer" value="">
+
+      <button type="submit" class="form-submit" id="submitBtn">
+        <span class="body"><span class="st">無料診断</span>を申し込む</span>
+        <span class="arrow">›</span>
+      </button>
+      <p class="form-note">※<a href="https://terms.012grp.co.jp/privacy/shinseikatsu_p/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意の上、送信ください。</p>
+    </form>
+  </section>
+
+  <!-- ================== Footer ================== -->
+  <footer class="footer">
+    <img class="lg" src="images/logo.png" alt="電気値下げ隊">
+    <div>
+      <a href="company.html">運営会社</a>｜<a href="https://terms.012grp.co.jp/privacy/shinseikatsu_p/" target="_blank" rel="noopener">プライバシーポリシー</a>
+    </div>
+    <div class="copy">© 電気値下げ隊</div>
+  </footer>
+
+  <!-- ================== Fixed Bottom CTA ================== -->
+  <div class="bottom-cta" id="bottomCta" aria-hidden="true">
+    <a href="#form" class="cta-yellow">
+      <span class="free"><span>完全</span><span>無料</span></span>
+      <span class="body"><span class="min">3分</span>で料金診断する</span>
+      <span class="arrow">›</span>
+    </a>
+  </div>
+
+</div>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
