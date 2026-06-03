@@ -560,7 +560,7 @@ a{color:inherit;text-decoration:none}
 .cases .cases-head .burst{width:26px;height:auto;flex:0 0 auto}
 .cases .cases-head .burst.r{transform:scaleX(-1)}
 .cases .cases-head .htxt{
-  font-size:27px;font-weight:900;color:#fff;line-height:1.2;letter-spacing:.005em;
+  font-size:clamp(18px,5.6cqw,27px);white-space:nowrap;font-weight:900;color:#fff;line-height:1.2;letter-spacing:.005em;
 }
 .cases .cases-head .htxt .yellow{color:var(--yellow)}
 
